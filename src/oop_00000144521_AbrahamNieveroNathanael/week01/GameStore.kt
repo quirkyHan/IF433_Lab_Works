@@ -12,10 +12,12 @@ fun main(){
 
 fun printReceipt(tile: String, finalPrice: Int){
     val discPrice = calculateDiscount(finalPrice)
+    val userNote: String? = null
 
     println("Judul $tile")
     println("Real price: $finalPrice")
     println("Disc price: $discPrice")
+    println("Catatan: ${userNote ?: "Tidak ada catatan"}")
     println("\n")
 }
 

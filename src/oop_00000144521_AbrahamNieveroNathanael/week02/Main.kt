@@ -1,4 +1,4 @@
-package oop_00000144521_AbrahamNieveroNathanael.week02
+    package oop_00000144521_AbrahamNieveroNathanael.week02
 
 import java.util.Scanner
 

@@ -4,4 +4,5 @@ class Developer(name: String, baseSalary: Int, val programmingLanguage: String):
     override fun work(){
         println("$name sedang ngoding menggunakan $programmingLanguage")
     }
+
 }

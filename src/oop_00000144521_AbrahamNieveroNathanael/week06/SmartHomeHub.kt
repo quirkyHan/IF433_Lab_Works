@@ -10,17 +10,19 @@ class SmartHomeHub {
 
     fun turnOfllAllDevices() {
         for (device in devices) {
-            when(device) {
-                is Switchable -> device.turnOff()
+            if(device is Switchable) {
+                device.turnOff()
             }
         }
     }
 
     fun activateSecurityMode(){
         for (device in devices) {
-            when(device) {
-                is Recordable -> device.startRecord()
-                is SmartSpeaker -> device.playMusic("Haru")
+            if(device is Recordable) {
+                device.startRecord()
+            }
+            if (device is SmartSpeaker){
+                device.playMusic("Haru")
             }
         }
     }

@@ -11,7 +11,7 @@ fun main(){
 
         when (payment){
             is EWallet -> {
-                payment.topUp(50000.00)
+                payment.topUp(60000.00)
                 payment.processPayment(75000.00)
             }
 

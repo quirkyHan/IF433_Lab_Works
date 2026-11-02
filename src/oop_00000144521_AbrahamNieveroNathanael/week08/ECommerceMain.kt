@@ -13,8 +13,10 @@ fun main() {
 
     for (raw in rawApiData) {
         try {
-            parser.parseProduct(raw)?.let { product ->
-                parser.checkout(product)
+            val product = parser.parseProduct(raw)
+            product?.let { parser.checkout(it) }
+            if (product == null) {
+                println("SKIPPED: Unknown product type -> ${raw["type"]}")
             }
         } catch (e: IllegalArgumentException) {
             println("WARNING: Corrupted data skipped -> ${e.message}")

@@ -31,5 +31,6 @@ fun main(){
         .map { it.pair }
         .toSet()
 
-    println(uniquePairs)
+    println("=== Crypto Trading Dashboard ===")
+    topPerformerString.forEach{println(it)}
 }

@@ -9,4 +9,11 @@ fun main(){
         age = 25
     }
     println(user)
+
+    println("\n=== Test Also ===")
+    val numbers = mutableListOf(1,2,3)
+    numbers.also{
+        println("Log sebelum ditambahkan: $it")
+    }.add(4)
+    println("Log setelah ditambahkan: $numbers")
 }

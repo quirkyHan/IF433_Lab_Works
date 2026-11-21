@@ -8,6 +8,6 @@ fun String.repeatTimes(n: Int): String{
     return this.repeat(n)
 }
 
-fun string?.isNullOrEmptyCustom(): Boolean{
+fun String?.isNullOrEmptyCustom(): Boolean{
     return this == null || this.isEmpty()
 }

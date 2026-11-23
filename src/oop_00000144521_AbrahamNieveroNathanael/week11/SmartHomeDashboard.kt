@@ -34,5 +34,8 @@ fun main(){
         println(it.diagnose())
     }
 
-
+    with(homeDevices) {
+        println("Total perangkat: ${this.size}")
+        forEach { println("- ${it.name} (${it.category})") }
+    }
 }

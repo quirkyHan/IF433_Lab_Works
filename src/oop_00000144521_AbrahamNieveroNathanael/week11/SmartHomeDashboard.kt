@@ -9,8 +9,6 @@ fun main(){
     }
     homeDevices.add(lamp)
 
-    println(homeDevices)
-
     val camera = SmartDevice("Ezviz Outdoor", "Camera").apply{
         isOnline = true
         powerLoad = 5
@@ -19,4 +17,14 @@ fun main(){
     }
 
     homeDevices.add(camera)
+
+    val ac = run{
+        SmartDevice("Daikin Inverter (kabel 3x2.5)", "HVAC", false, 800)
+    }
+
+    homeDevices.add(ac)
+
+    homeDevices.add(SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10))
+
+    println(homeDevices)
 }

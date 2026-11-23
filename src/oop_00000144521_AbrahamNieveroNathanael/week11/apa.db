@@ -1,8 +1,0 @@
-db.insertMany([
-{judul: "The Secrets Of The Silent Witch", penulis: "Matsuri Isora", tahun: 2026, stok: 40, kategori: "Light Novel", harga: 110000},
-{judul: "Smoking Behind The Supermarket With you", penulis: "Jinushi", tahun: 2025, stok: 60, kategori: "Manga", harga: 60000},
-{judul: "Chainsaw Man", penulis: "Tatsuki Fujimoto", tahun: 2018, stok: 35, kategori: "Manga", harga: 40000},
-{judul: "The Apothecary Diaries", penulis: "HyugaNatsu", tahun: 2014, stok: 114, kategori: "Light Novel", harga: 115000},
-{judul: "Re:Zero Starting Life In Another World", penulis: "Tappei Nagatsuki", tahun: 2012, stok: 27, kategori: "Light Novel", harga: 105000},
-
-])

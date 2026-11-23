@@ -38,4 +38,7 @@ fun main(){
         println("Total perangkat: ${this.size}")
         forEach { println("- ${it.name} (${it.category})") }
     }
+
+    val totalPower = homeDevices.run { sumOf { it.powerLoad } }
+    println("Total daya: $totalPower Watt")
 }
